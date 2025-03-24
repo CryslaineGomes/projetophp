@@ -1,0 +1,89 @@
+#--------------------------------------------------------------------
+# Example Environment Configuration file
+#
+# This file can be used as a starting point for your own
+# custom .env files, and contains most of the possible settings
+# available in a default install.
+#
+# By default, all of the settings are commented out. If you want
+# to override the setting, you must un-comment it by removing the '#'
+# at the beginning of the line.
+#--------------------------------------------------------------------
+
+#--------------------------------------------------------------------
+# ENVIRONMENT
+#--------------------------------------------------------------------
+
+CI_ENVIRONMENT = development   # ou "production" se estiver em produção
+
+#--------------------------------------------------------------------
+# APP
+#--------------------------------------------------------------------
+
+# Se for utilizar uma base URL diferente
+app.baseURL = 'http://localhost/projetophp/public'
+
+# Se você quer forçar solicitações seguras globais (por exemplo, HTTPS)
+app.forceGlobalSecureRequests = false
+
+# Content Security Policy - se não for usar, pode manter como "false"
+app.CSPEnabled = false
+
+#--------------------------------------------------------------------
+# DATABASE
+#--------------------------------------------------------------------
+
+# Aqui você configura a conexão com o banco de dados PostgreSQL
+database.default.hostname = localhost
+database.default.database = projetophp    # Nome do seu banco de dados
+database.default.username = seu_usuario  # Seu usuário do PostgreSQL
+database.default.password = sua_senha   # Sua senha do PostgreSQL
+database.default.DBDriver = Postgre     # Configurado para PostgreSQL
+database.default.DBPrefix =             # Prefixo, se necessário
+database.default.port = 5432            # A porta do PostgreSQL (geralmente 5432)
+
+# Se você usa uma base de dados de testes
+# database.tests.hostname = localhost
+# database.tests.database = ci4_test
+# database.tests.username = root
+# database.tests.password = root
+# database.tests.DBDriver = MySQLi
+# database.tests.DBPrefix =
+# database.tests.charset = utf8mb4
+# database.tests.DBCollat = utf8mb4_general_ci
+# database.tests.port = 3307
+
+#--------------------------------------------------------------------
+# ENCRYPTION
+#--------------------------------------------------------------------
+
+# encryption.key = # Se for usar criptografia, adicione sua chave aqui
+
+#--------------------------------------------------------------------
+# SESSION
+#--------------------------------------------------------------------
+
+# session.driver = 'CodeIgniter\Session\Handlers\FileHandler'
+# session.savePath = null
+
+#--------------------------------------------------------------------
+# LOGGER
+#--------------------------------------------------------------------
+
+logger.threshold = 4 # Define o nível de log
+
+#--------------------------------------------------------------------
+# Additional Database Configuration
+#--------------------------------------------------------------------
+
+# Adicionando a configuração extra de conexão com o PostgreSQL
+database.default.DSN = ''
+database.default.charset = utf8
+database.default.DBCollat = 'utf8_general_ci'
+database.default.pConnect = false
+database.default.DBDebug = true
+database.default.cacheOn = false
+database.default.encrypt = false
+database.default.compress = false
+database.default.strictOn = false
+database.default.failover = []
